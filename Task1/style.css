@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+    min-width: 100vh;
+}
+.header{
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://images.unsplash.com/photo-1517218534291-6ac9e17835c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW4lMjBpbWFnZSUyMGluJTIwbmlnaHR8ZW58MHwwfDB8fHww);
+    background-size: cover;
+    background-position: bottom;
+}
+.header .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.462);
+
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.text .image{
+    background-image: url(https://images.unsplash.com/photo-1533244418366-8ce7b1c1a25f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW4lMjBpbWFnZSUyMGluJTIwbmlnaHR8ZW58MHwxfDB8fHww);
+    height: 300px;
+    width: 250px ;
+    background-position: bottom;
+    background-size: cover;
+}
+.rtext{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.footer{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+}
+.b1{
+    width: 33%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1445264918150-66a2371142a2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWluJTIwaW1hZ2UlMjBpbiUyMG5pZ2h0fGVufDB8MXwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    text-align: center;
+    padding: 15px;
+}
+.b2{
+    width: 33%;
+    min-height: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://media.istockphoto.com/id/498309616/photo/great-ocean-road-at-night-milky-way-view.webp?b=1&s=170667a&w=0&k=20&c=q5cmaFOEDmoy3CbVEESWrCvSlZ-WDT1DgRtlEdP0ISE=);
+    background-position: bottom;
+    background-size: cover;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    text-align: center;
+    padding: 15px;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    color: gray;
+    background-image: url(https://media.istockphoto.com/id/2162693027/photo/scenic-view-of-train-passing-nine-arch-bridge-in-ella-at-twilight.webp?b=1&s=170667a&w=0&k=20&c=qb9XpHExseh3zfWzoHR9TV0Kq9LtP5p6KakQ5d4npp0=);
+    background-position: center;
+    background-size: cover;
+}
+.b2 .down .overlay h1{
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+.b3{
+    width: 34%;
+    min-height: inherit;
+    background-image: url(https://images.unsplash.com/photo-1517411032315-54ef2cb783bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdW50YWluJTIwaW1hZ2UlMjBpbiUyMG5pZ2h0fGVufDB8MXwwfHx8MA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+}
+.b3 .overlay h4{
+    padding: 1.2vh;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+@media (max-width:900px) {
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+
+@media (max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height: 200px;
+        width: 150px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 .up{
+        height: 30vh;
+    }
+    .b2 .down{
+        height: 30vh;
+        /* background-position: calc(30deg); */
+    }
+    .b3{
+        width: 100%;
+       min-height: 30vh;
+    }
+}
